@@ -9,7 +9,7 @@ import AddTasks from "./components/Todo-sidebar/AddTasks";
 import Tasks from "./components/Tasks/Tasks";
 import Context from "./components/Context";
 
-export const BASE_URL = "https://react-todo-list-solo.herokuapp.com/api"
+export const BASE_URL = "https://react-todo-list-solo.herokuapp.com/api" //Base_url change for deploying. Initial link was: "http://localhost:3001/"
 
 function App() {
   const [lists, setLists] = useState([]);
