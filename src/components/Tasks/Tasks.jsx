@@ -9,6 +9,7 @@ import axios from "axios";
 
 import AddTaskForm from "./AddTaskForm";
 import Task from "./Task";
+import {BASE_URL} from "../../App";
 
 
 const Tasks = ({ tasks, onAddTask, withoutEmpty }) => {
@@ -19,7 +20,7 @@ const Tasks = ({ tasks, onAddTask, withoutEmpty }) => {
     const newTitle = window.prompt("Name of the title", tasks.name);
     if (newTitle) {
       axios
-        .patch("http://localhost:3001/lists/" + tasks.id, {
+        .patch(`${BASE_URL}/lists/` + tasks.id, {
           name: newTitle,
         })
         .catch(() => {

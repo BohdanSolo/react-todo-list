@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from "react";
 import addSVG from "../../assets/img/add.svg";
 import "./Tasks.scss";
 import axios from "axios";
+import {BASE_URL} from "../../App";
 
 const AddTaskForm = ({ onAddTask, tasks }) => {
   const [visibleForm, setVisibleForm] = useState(true);
@@ -30,7 +31,7 @@ const AddTaskForm = ({ onAddTask, tasks }) => {
     };
     setIsLoading(true);
     axios
-      .post("http://localhost:3001/tasks", newTask)
+      .post(`${BASE_URL}/tasks`, newTask)
       .then(({ data }) => {
         onAddTask(tasks.id, data);
         setVisibleForm(!visibleForm);

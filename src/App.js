@@ -9,6 +9,8 @@ import AddTasks from "./components/Todo-sidebar/AddTasks";
 import Tasks from "./components/Tasks/Tasks";
 import Context from "./components/Context";
 
+export const BASE_URL = "http://localhost:3001"
+
 function App() {
   const [lists, setLists] = useState([]);
   const [colors, setColors] = useState(null);
@@ -16,11 +18,11 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/lists?_expand=color&_embed=tasks")
+      .get(`${BASE_URL}/lists?_expand=color&_embed=tasks`)
       .then(({ data }) => {
         setLists(data);
       });
-    axios.get("http://localhost:3001/colors").then(({ data }) => {
+    axios.get(`${BASE_URL}/colors`).then(({ data }) => {
       setColors(data);
     });
   }, []);
@@ -87,7 +89,7 @@ function App() {
         return list;
       });
       setLists(newList);
-      axios.delete("http://localhost:3001/tasks/" + taskId).catch(() => {
+      axios.delete(`${BASE_URL}/tasks/` + taskId).catch(() => {
         alert("Failed to remove your task");
       });
     }
@@ -107,7 +109,7 @@ function App() {
     });
     setLists(newList);
     axios
-      .patch("http://localhost:3001/tasks/" + taskId, { completed })
+      .patch(`${BASE_URL}/tasks/` + taskId, { completed })
       .catch(() => {
         alert("Failed to renew your task");
       });
@@ -131,7 +133,7 @@ function App() {
     });
     setLists(newList);
     axios
-      .patch("http://localhost:3001/tasks/" + taskId, { text: newTaskText })
+      .patch(`${BASE_URL}/tasks/` + taskId, { text: newTaskText })
       .catch(() => {
         alert("Failed to remove your task");
       });

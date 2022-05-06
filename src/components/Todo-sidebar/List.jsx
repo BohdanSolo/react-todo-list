@@ -3,6 +3,7 @@ import "./List.scss";
 import classnames from "classnames";
 import removeSVG from "../../assets/img/remove.svg";
 import axios from "axios";
+import {BASE_URL} from "../../App";
 /*Бібліотека для класів (npm install classnames) Викликаєш функцію classnames в атрибуті className. Аргументи функції це класи, скільки аргументі стільки і окремих класів ("a","b","c" -or- items.class). Також можна по умові ці класи ставити в аргументи фнції: classnames("active": item.active) --- задасьбся клас ектів якщо items.active є ture*/
 const List = ({
   lists,
@@ -12,7 +13,7 @@ const List = ({
   allTasks,
 }) => {
   const RemoveList = (item) => {
-    axios.delete("http://localhost:3001/lists/" + item.id).then(() => {
+    axios.delete(`${BASE_URL}/lists/` + item.id).then(() => {
       onRemove(item.id);
     });
   };

@@ -4,6 +4,7 @@ import "./Pop-up.scss";
 import "../../index.scss";
 import closeSVG from "../../assets/img/close.svg";
 import axios from "axios";
+import {BASE_URL} from "../../App";
 
 const AddTasks = ({ tasks, colors, onAdd }) => {
   const [visible, setVisible] = useState(false);
@@ -24,7 +25,7 @@ const AddTasks = ({ tasks, colors, onAdd }) => {
     }
     setIsLoading(true);
     axios
-      .post("http://localhost:3001/lists", {
+      .post(`${BASE_URL}/lists`, {
         name: inputValue,
         colorId: activeColor,
       })
