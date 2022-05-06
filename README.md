@@ -11,7 +11,7 @@
 ```bash
 npm start                # run app in the development mode
 npm run build            # builds the app for production
-npm run server           #run and watch json-server on port 3001
+npm run server           # run and watch json-server on port 3001
 ```
 
 ##API
