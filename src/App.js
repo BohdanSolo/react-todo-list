@@ -9,7 +9,7 @@ import AddTasks from "./components/Todo-sidebar/AddTasks";
 import Tasks from "./components/Tasks/Tasks";
 import Context from "./components/Context";
 
-export const BASE_URL = "http://localhost:3001"
+export const BASE_URL = "https://react-todo-list-solo.herokuapp.com/api"
 
 function App() {
   const [lists, setLists] = useState([]);
