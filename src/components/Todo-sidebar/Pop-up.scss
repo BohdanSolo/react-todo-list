@@ -1,0 +1,81 @@
+.list__item {
+  position: relative;
+  padding: 8px 15px;
+}
+.list__pop-up {
+  position: relative;
+  padding: 18px;
+  margin-top: 13px;
+  width: 235px;
+  height: 148px;
+  background: #FFFFFF;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+
+.btn {
+  width: 100%;
+}
+
+.list__pop-up-colors {
+  margin: 15px 0;
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: all 0.3s linear;
+
+    &:hover:nth-child(7n) {
+      border: 2.5px solid #d52f07;
+    }
+    &:hover:nth-child(5n) {
+      border: 2.5px solid #d4bd19;
+    }
+
+
+    &:hover,&:active {
+      border: 2.5px solid black;
+      transform: translateY(-2px);
+      transition: all 0.1s linear;
+    }
+
+    &.active {
+      border: 2.5px solid black;
+      transform: translateY(-2px);
+      transition: all 0.1s linear;
+      &:nth-child(7n) {
+        border: 2.5px solid #d52f07;
+      }
+      &:nth-child(5n) {
+        border: 2.5px solid #d4bd19;
+      }
+    }
+
+  }
+}
+
+.list__pop-up-close {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  cursor: pointer;
+}
+
+
+/* Rectangle 5 */
+
+
+
+
+
+

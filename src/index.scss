@@ -1,0 +1,75 @@
+@import "reset.scss";
+body {
+  margin: 0;
+  font-family: 'Roboto',-apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.todo {
+  display: flex;
+  width: 750px;
+  height: 529px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 20px #f3f3f3;
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+  font-size: 14px;
+
+  .todo__sidebar {
+    background-color: #efefef;
+    width: 200px;
+    border-right: 1px solid #F1F1F1;
+    padding: 60px 10px;
+    height: 100%;
+  }
+}
+
+.todo__tasks {
+  /*Це скорочення від flex-grow і по суті ми говоримо, що елемент буде пожирати всю можливу площу яка вільна Якщо загальна 546, сайдбар 200 то воно займає все інше. Можна було б використати width 546px*/
+  width: 100%;
+  overflow: auto;
+}
+
+.input__field {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 12px;
+  transition: 0.3s linear;
+
+  &:focus {
+    border-color: #dcd8d8;
+  }
+  &:hover {
+    border-color: #dcd8d8;
+   background-color: #f6f6f6;
+  }
+}
+
+.btn {
+  height: 37px;
+  left: 46px;
+  top: 449px;
+  color: white;
+  padding: 10px;
+
+  background: #4DD599;
+  border-radius: 4px;
+
+  transition: 0.3s linear;
+
+
+&:hover {
+  background: #2eb47a;
+}
+}
+
+
+
+

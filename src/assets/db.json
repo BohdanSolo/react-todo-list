@@ -1,0 +1,184 @@
+{
+  "lists": [
+    {
+      "name": "Front-end ",
+      "colorId": 6,
+      "id": 6
+    },
+    {
+      "name": "Books",
+      "colorId": 2,
+      "id": 7
+    },
+    {
+      "name": "JS",
+      "colorId": 5,
+      "id": 8
+    },
+    {
+      "name": "React",
+      "colorId": 8,
+      "id": 9
+    },
+    {
+      "name": "Shopping",
+      "colorId": 4,
+      "id": 10
+    },
+    {
+      "name": "Films to watch",
+      "colorId": 1,
+      "id": 11
+    }
+  ],
+  "tasks": [
+    {
+      "listId": 6,
+      "text": "Learn HTML/CSS",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "listId": 6,
+      "text": "Learn JavaScript",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "listId": 6,
+      "text": "Learn React",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "listId": 6,
+      "text": "Learn Git",
+      "completed": true,
+      "id": 4
+    },
+    {
+      "listId": 7,
+      "text": "The Wolf from Wall Street",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "listId": 7,
+      "text": "Harry Potter",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "listId": 8,
+      "text": "Objects",
+      "completed": true,
+      "id": 7
+    },
+    {
+      "listId": 8,
+      "text": "Arrays",
+      "completed": true,
+      "id": 8
+    },
+    {
+      "listId": 8,
+      "text": "Patterns",
+      "completed": true,
+      "id": 9
+    },
+    {
+      "listId": 9,
+      "text": "React hooks",
+      "completed": true,
+      "id": 11
+    },
+    {
+      "listId": 6,
+      "text": "Learn Redux",
+      "completed": true,
+      "id": 17
+    },
+    {
+      "listId": 11,
+      "text": "Matrix",
+      "completed": true,
+      "id": 18
+    },
+    {
+      "listId": 11,
+      "text": "Titanic",
+      "completed": false,
+      "id": 19
+    },
+    {
+      "text": "sfdsf",
+      "completed": false,
+      "id": 20
+    },
+    {
+      "text": "dfdfd",
+      "completed": false,
+      "id": 21
+    },
+    {
+      "listId": 9,
+      "text": "HOC",
+      "completed": true,
+      "id": 22
+    },
+    {
+      "listId": 9,
+      "text": "What is new in React 18?",
+      "completed": true,
+      "id": 23
+    },
+    {
+      "listId": 9,
+      "text": "Usecallback vs UseMemo",
+      "completed": false,
+      "id": 24
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#f1991c",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#b4b4b4",
+      "name": "grey"
+    },
+    {
+      "id": 5,
+      "hex": "#0f0fa3",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#0d202b",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#f55252",
+      "name": "red"
+    }
+  ]
+}
