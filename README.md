@@ -30,5 +30,5 @@ npm run server           # run and watch json-server on port 3001
 - Adding todos logic with selected color;
 - You can mark your task as completed;
 - You can edit your task or remove it;
-- You can change your tasks name;
+- You can change your tasks name; 
 - You can add a new task in the tasks' folder;
